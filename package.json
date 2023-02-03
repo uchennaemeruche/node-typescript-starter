@@ -6,7 +6,8 @@
   "scripts": {
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -29,8 +30,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier-format && npm run lint",
-      "pre-push": ""
+      "pre-commit": "npm run prettier-format && npm run lint"
     }
   }
 }
